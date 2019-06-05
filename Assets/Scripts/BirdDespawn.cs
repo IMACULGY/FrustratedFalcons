@@ -11,7 +11,9 @@ public class BirdDespawn : MonoBehaviour
         {
             Rigidbody2D rb = gameObject.GetComponent<Rigidbody2D>();
             if (rb.velocity.sqrMagnitude < 0.1)
+            {
                 Destroy(gameObject);
+            }
         }
     }
 }

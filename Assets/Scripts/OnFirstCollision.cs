@@ -5,10 +5,14 @@ using UnityEngine;
 public class OnFirstCollision : MonoBehaviour
 {
     public GameObject particles;
+    public bool hasCollided = false;
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        Instantiate(particles, transform.position, Quaternion.identity);
-        Destroy(this);
+        if (!hasCollided)
+        {
+            Instantiate(particles, transform.position, Quaternion.identity);
+            hasCollided = true;
+        }
     }
 }
