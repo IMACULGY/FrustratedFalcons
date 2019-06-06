@@ -20,6 +20,7 @@ public class SlingshotBehavior : MonoBehaviour
         Vector2 dir = startPos - (Vector2)transform.position;
         GetComponent<Rigidbody2D>().AddForce(dir * force);
         Destroy(this);
+
     }
 
     void OnMouseDrag()

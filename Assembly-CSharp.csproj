@@ -56,6 +56,7 @@
      <Compile Include="Assets\Scripts\BirdDespawn.cs" />
      <Compile Include="Assets\Scripts\BorderBehavior.cs" />
      <Compile Include="Assets\Scripts\CameraZoom.cs" />
+     <Compile Include="Assets\Scripts\CatapultBandBehavior.cs" />
      <Compile Include="Assets\Scripts\IceBehavior.cs" />
      <Compile Include="Assets\Scripts\OnFirstCollision.cs" />
      <Compile Include="Assets\Scripts\SlingshotBehavior.cs" />

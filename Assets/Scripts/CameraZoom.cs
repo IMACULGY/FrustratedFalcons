@@ -25,19 +25,20 @@ public class CameraZoom : MonoBehaviour
         GetComponent<Camera>().orthographicSize = zoomSize;
     }
 
-    public void followPlayer()
+    void FixedUpdate()
     {
-        GameObject[] bird = GameObject.FindGameObjectsWithTag("Launched");
-        if(!bird[0].GetComponent<OnFirstCollision>().hasCollided)
+        GameObject bird = GameObject.FindWithTag("Launched");
+        
+        if(bird != null && !bird.GetComponent<OnFirstCollision>().hasCollided)
         {
+            Vector3 offset = bird.transform.position - transform.position;
+            offset.z = 0;
             //update camera position based on bird position
-            Vector3 cameraPos = new Vector3(1, 0, -10);
-            if (bird[0].transform.position.x > gameObject.transform.position.x)
-                cameraPos += new Vector3(bird[0].transform.position.x, 0, 0);
-            if (bird[0].transform.position.y > gameObject.transform.position.y)
-                cameraPos += new Vector3(0, bird[0].transform.position.y, 0);
-            gameObject.transform.position = cameraPos;
-            followPlayer();
+            if (offset.x <= 0 || bird.transform.position.y < 1)
+                offset.x = 0;
+            if (offset.y == 0 || bird.transform.position.y < 0)
+                offset.y = 0;
+            gameObject.transform.position += offset;
         }
     }
 }

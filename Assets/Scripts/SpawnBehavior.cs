@@ -9,14 +9,14 @@ using UnityEngine;
 public class SpawnBehavior : MonoBehaviour
 {
     public GameObject newBird;
-    bool hasBird = false;
+    public bool hasBird = false;
 
     void FixedUpdate()
     {
-        if (!hasBird && isStationary())
+        if (!hasBird && isStationary() )
         {
-            GameObject[] camera = GameObject.FindGameObjectsWithTag("MainCamera");
-            camera[0].GetComponent<CameraZoom>().revertCamera();
+            //GameObject[] camera = GameObject.FindGameObjectsWithTag("MainCamera");
+            //camera[0].GetComponent<CameraZoom>().revertCamera();
             spawnBird();
         }
     }
@@ -36,8 +36,8 @@ public class SpawnBehavior : MonoBehaviour
             co.gameObject.tag = "Launched";
             removeTrails();
             removeParticles();
-            GameObject[] camera = GameObject.FindGameObjectsWithTag("MainCamera");
-            camera[0].GetComponent<CameraZoom>().followPlayer();
+            //GameObject[] camera = GameObject.FindGameObjectsWithTag("MainCamera");
+            //camera[0].GetComponent<CameraZoom>().followPlayer();
         }
     }
 
