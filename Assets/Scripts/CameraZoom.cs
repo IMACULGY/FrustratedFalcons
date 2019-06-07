@@ -9,6 +9,8 @@ public class CameraZoom : MonoBehaviour
     //public float y = 0.1f;
     //public float maxZoomY = 2.6f;
 
+    public Vector3 origPos = new Vector3(1f, 0f, -10f);
+
     public void revertCamera()
     {
         Vector3 origPos = new Vector3(1f, 0f, -10f);
@@ -25,20 +27,26 @@ public class CameraZoom : MonoBehaviour
         GetComponent<Camera>().orthographicSize = zoomSize;
     }
 
-    void FixedUpdate()
+    void LateUpdate()
     {
         GameObject bird = GameObject.FindWithTag("Launched");
-        
-        if(bird != null && !bird.GetComponent<OnFirstCollision>().hasCollided)
+
+        if (bird != null && !bird.GetComponent<OnFirstCollision>().hasCollided)
         {
             Vector3 offset = bird.transform.position - transform.position;
             offset.z = 0;
             //update camera position based on bird position
-            if (offset.x <= 0 || bird.transform.position.y < 1)
+            if (offset.x <= 0 || bird.transform.position.x < 1)
                 offset.x = 0;
             if (offset.y == 0 || bird.transform.position.y < 0)
                 offset.y = 0;
-            gameObject.transform.position += offset;
+            gameObject.transform.position = gameObject.transform.position + offset;
         }
     }
+
+    /*void LateUpdate()
+    {
+        GameObject bird = GameObject.FindWithTag("Launched");
+        gameObject.transform.position = bird.transform.position + new Vector3(0, 0, -10);
+    }*/
 }

@@ -58,7 +58,9 @@
      <Compile Include="Assets\Scripts\CameraZoom.cs" />
      <Compile Include="Assets\Scripts\CatapultBandBehavior.cs" />
      <Compile Include="Assets\Scripts\IceBehavior.cs" />
+     <Compile Include="Assets\Scripts\MasterButtonScript.cs" />
      <Compile Include="Assets\Scripts\OnFirstCollision.cs" />
+     <Compile Include="Assets\Scripts\SecretRoom.cs" />
      <Compile Include="Assets\Scripts\SlingshotBehavior.cs" />
      <Compile Include="Assets\Scripts\SpawnBehavior.cs" />
      <Compile Include="Assets\Scripts\TrailBehavior.cs" />

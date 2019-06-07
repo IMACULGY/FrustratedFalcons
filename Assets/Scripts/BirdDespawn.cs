@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class BirdDespawn : MonoBehaviour
 {
+
+    float timer = 0f;
+
     // Update is called once per frame
     void FixedUpdate()
     {
         if (gameObject.tag == "Launched" || gameObject.GetComponent<OnFirstCollision>().hasCollided)
         {
+
             Rigidbody2D rb = gameObject.GetComponent<Rigidbody2D>();
             if (rb.velocity.sqrMagnitude < 0.1)
             {
@@ -18,4 +22,7 @@ public class BirdDespawn : MonoBehaviour
             }
         }
     }
+
+
+
 }

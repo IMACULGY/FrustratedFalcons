@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 3ecab562b56e3eb40a7ab9486194df32
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: JAKARTA LEGAL AID INSTITUTE
+  fontNames:
+  - JAKARTA LEGAL AID INSTITUTE
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
