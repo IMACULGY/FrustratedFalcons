@@ -64,6 +64,8 @@
      <Compile Include="Assets\Scripts\SlingshotBehavior.cs" />
      <Compile Include="Assets\Scripts\SpawnBehavior.cs" />
      <Compile Include="Assets\Scripts\TrailBehavior.cs" />
+     <Compile Include="Assets\Scripts\UpdateLifeText.cs" />
+     <Compile Include="Assets\Scripts\WinLoseCondition.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>D:/Projects/Unity/Furious Falcons/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>

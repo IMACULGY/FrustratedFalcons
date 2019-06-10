@@ -2,17 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Secret room that closes the
+ * game 5-10 seconds after entry
+ */
 public class SecretRoom : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public int frames = 0;
 
-    // Update is called once per frame
+    // Start is called before the first frame update
     void Update()
     {
-        
+        frames++;
+        if (frames > 300)
+            Application.Quit();
     }
 }

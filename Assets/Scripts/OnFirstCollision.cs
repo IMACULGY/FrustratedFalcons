@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/*
+ * Utility class that holds a variable that tells
+ * whether or not the bird has collided.
+ */
 public class OnFirstCollision : MonoBehaviour
 {
     public GameObject particles;

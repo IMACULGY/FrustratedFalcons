@@ -9,6 +9,9 @@ TagManager:
   - Unlaunched
   - Launched
   - Enemy
+  - ZoomOut
+  - ZoomIn
+  - LifeText
   layers:
   - Default
   - TransparentFX
