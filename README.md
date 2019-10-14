@@ -1,5 +1,5 @@
 # Frustrated Falcons
-The falcons are frustrated that the enemies stole all their children! Use physics to destroy them and win the game!
+The falcons are frustrated that the enemies stole all their children! Use your physics knowledge of projectile motion to destroy them and win the game!
 
 ![image](https://user-images.githubusercontent.com/32719081/59172527-80ebf700-8b16-11e9-8d17-763af5f1ab26.png)
 
@@ -25,3 +25,7 @@ Here is how to open the project on your computer using Unity:
 ![image](https://user-images.githubusercontent.com/32719081/59172562-c6102900-8b16-11e9-9f14-e9935ea0bd06.png)
 
 ![image](https://user-images.githubusercontent.com/32719081/59172574-da542600-8b16-11e9-90a0-2024c272837a.png)
+
+
+# Credit
+This game is inspired by Angry Birds
