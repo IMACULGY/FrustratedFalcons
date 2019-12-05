@@ -27,4 +27,4 @@ Here is how to open the project on your computer using Unity:
 ![image](https://user-images.githubusercontent.com/32719081/59172574-da542600-8b16-11e9-90a0-2024c272837a.png)
 
 # Credit
-This game is inspired by Angry Birds
+Frustrated Falcons takes inspiration from Angry Birds, which is owned by Rovio. IMACULGY has no relation to Rovio and does not take credit for any elements borrowed from their games.
